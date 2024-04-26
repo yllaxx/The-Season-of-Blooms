@@ -127,7 +127,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url(pictures/new\ bg.png);
+    background:url(new\ bg.png);
     background-size: cover;
     background-position: center;
     padding-top:6rem;
