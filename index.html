@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Fix typo here -->
+        <title>The Season of Blooms</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Q4iVudInxjaPawCOhIr5StGDVlYT7YkRTxu6PwKO78/Cmr7gocnhvKaX+JpW+2xJN7eJ9G/K3+lj3KYFDbZxSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler"> <!-- Fix id to match the CSS selector -->
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="#home" class="logo"><img src="pictures/The Season of Blooms Logo.png"></a> <!-- Removed unnecessary closing tag -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#contact">contact</a>
+        </nav>
+    
+        <div class="icons">
+            <a href="addtocart copy.html" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.getElementById('toggler');
+    toggler.addEventListener('change', function () {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    });
+});
+
+    </script>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Fresh Flowers</h3>
+        <span>natural & beautiful flowers</span>
+        <p>Welcome to our botanical wonderland where nature's vibrant palette unfolds 
+            in an enchanting display of colors and fragrances. Explore our exquisite 
+            collection of flowers, each one a testament to the beauty and diversity of 
+            the natural world.</p>
+        <a href="addtocart copy.html" class="btn">shop now</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading"><span> about </span> us </h1>
+    <div class="row">
+        <div class="video-container">
+            <video src="video/vids.mp4" loop autoplay muted></video>
+            <h3>best flower sellers</h3>
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>At The Season of Blooms, we understand the importance of choosing the perfect 
+                blooms to express your sentiments. You're not just selecting a florist; you're 
+                choosing a partner in creating meaningful moments and lasting memories. 
+                Experience the difference that passion, quality, and personalized service can make. 
+                Let us help you celebrate life's special moments in style.</p>
+            <a href="aboutus.html" class="btn">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section class="icons-container">
+    <div class="icons">
+        <img src="pictures/icon1.jpg" alt="">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="pictures/icon2.jpg" alt="">
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback garantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="pictures/icon3.jpg" alt="">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="pictures/icon4.jpg" alt="">
+        <div class="info">
+            <h3>secure payments</h3>
+            <span>protected by any</span>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h1 class="heading"> Our <span>products</span></h1>
+    <div class="box-container">
+        <div class="card">
+            <img src="pictures/tulips.jpg" alt="tulips" style="width:100%">
+            <h1>About Tulips</h1>
+            <p>Step into a world of vibrant hues and delicate petals – where tulips reign supreme!</p>
+            <a href="tulips.html"><button>Learn more</button></a>
+        </div>
+        <div class="card">
+            <img src="pictures/roses.jpg" alt="roses" style="width:100%">
+            <h1>About Roses</h1>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <a href="roses.html"><button>Learn more</button></a>
+        </div>
+        <div class="card">
+            <img src="pictures/sunflower.jpg" alt="sunflower" style="width:100%">
+            <h1>About Sunflower</h1>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <a href="sunflower.html"><button>Learn more</button></a>
+        </div>
+        <div class="card">
+            <img src="pictures/daisy.jpg" alt="daisy" style="width:100%">
+            <h1>About Daisies</h1>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p><button>Learn more</button></p>
+        </div>
+        <div class="card">
+            <img src="pictures/lavander.jpg" alt="lavander" style="width:100%">
+            <h1>About Lavander</h1>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <a href="lavander.html"><button>Learn more</button></a>
+           
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+    <h1 class="heading"> <span> contact </span> us </h1>
+    <div class="map-container">
+        <div class="mapBg"></div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.33623786264812!2d121.0244835905135!3d14.577420999341754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b0deb88151%3A0x2f759de8554dec49!2sI.%20Trinidad%2C%20Mandaluyong%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1714144698625!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+    <div class="contactMethod">
+        <div class="method">
+            <i class="fa-solid fa-location-dot contactIcon"></i>
+            <article class="text">
+                <h1 class="sub-heading">Location</h1>
+                <p class="para">909 I.Trinidad St. Barangay Vergara, Mandaluyong City</p>
+            </article>
+        </div>
+
+        <div class="method">
+            <i class="fa-solid fa-envelope contactIcon"></i>
+            <article class="text">
+                <h1 class="sub-heading">Email</h1>
+                <p class="para">Email: nicolebelarmino47@gmail.com</p>
+            </article>
+        </div>
+
+        <div class="method">
+            <i class="fa-solid fa-phone contactIcon"></i>
+            <article class="text">
+                <h1 class="sub-heading">Phone</h1>
+                <p class="para">09923928640</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; The Season of <span class="designer">Blooms</span></p>
+        </div>
+    </footer>
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,602 @@
+:root{
+    --pink:#e84393;
+    --bodyBg: #303841;
+    --formBg: #343F4B;
+    --textColor: #fff;
+    --primaryColor: #0076A3;
+    --paraColor: #5e6c79;
+    --paraColor: #74828f;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header #navbar-toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align:center;
+    font-size: 4rem;
+    color:#333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #FFD1DA;
+}
+
+.heading span{
+    color:var(--pink)
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+    z-index:1000;
+}
+
+header .logo{
+    width: 100px; /* Adjust the width as needed */
+    height: auto; 
+}
+
+header img{
+    width: 200px; /* Adjust the width as needed */
+    height: auto; 
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color:#666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left:1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0.3);
+    display: none;
+}
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(pictures/new\ bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top:6rem;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#333;
+
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color:#333;
+    padding: 1rem 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width:100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top: 58%; transform: translateY(-50%);
+    font-size:3rem;
+    background:#fff;
+    width:100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#333;
+}
+
+.about .row .content p{
+    font-size:1.5rem;
+    color:#999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+}
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.category {
+    border: 3px solid #e84393;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: 20%;
+    
+    box-sizing: border-box;
+    background-color: rgb(255, 232, 235);
+}
+
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.contact .row .form{
+    flex:1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    background-repeat: repeat-y;
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width:100%;
+}
+
+.contact .row form .box{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color:var(--pink);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+.order form{
+    width:90rem;
+    border-radius: .5rem;
+    box-shadow: #666;
+    border: .1rem solid rgba(0,0,0,.2);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order form .inputBox .input{
+    width: 49%;
+}
+
+.order form .inputBox .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color:lightpink;
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.order form .inputBox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.order form .inputBox .btn{
+    margin-top: 0;
+}
+
+.card {
+    box-shadow: 0 10px 10px 0 #e84393;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 100%;
+    width: fit-content;
+  }
+  
+.card img{
+    height: auto;
+    width: 100px;
+}
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: pink;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+    background-color: #e84393;
+  }
+
+
+  footer{
+    background-color: #FFD1DA;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: palevioletred;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #e84393;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #86003C;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: palevioletred;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.mapBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.map {
+    width: 60%;
+    height: 90%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contactMethod {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em; /* Adjusted margin-top */
+    text-align: left;
+    padding: 10px;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em; /* Adjusted margin-bottom */
+}
+
+
+.contactIcon {
+    font-size: 2rem;
+    color: var(--pink);
+    width: 70px;
+}
+
+@media screen and (min-width: 800px) {
+    .contact-form {
+        max-width: 1100px;
+    }
+
+    .contactMethod {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Show the navbar toggle button */
+    header .fa-bars {
+        display: block;
+    }
+
+    /* Adjust the navbar appearance */
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        display: none; /* Hide the navbar by default */
+    }
+
+    header .navbar.active {
+        display: flex; /* Show the navbar when active */
+        flex-direction: column; /* Stack the navbar links vertically */
+        align-items: center; /* Center align the navbar items */
+        gap: 1rem; /* Add some gap between navbar links */
+    }
+
+    /* Adjust the appearance of navbar links */
+    header .navbar a {
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: #666;
+        display: block; /* Ensure navbar links occupy full width */
+        text-align: center; /* Center align the navbar links */
+    }
+
+    /* Style the toggle button */
+    header #toggler {
+        display: none; /* Hide the checkbox input for the toggle */
+    }
+}
