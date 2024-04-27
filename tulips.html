@@ -1,125 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About Tulips</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-shadow: border-box;
+        }
 
-.parallax {
-  /* Full height */
-  height: 100%; 
+        body{
+            font-size: 1.7rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #FFD1DA;
+            color: #86003C;
+            padding: 4rem;
+        
+        }
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+        h1{
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 4rem;
+            transition: all 0.3s;
+        }
 
-.bg1 {
-  /* The first image used */
-  background-image: url('pictures/The\ Season\ of\ blooms.jpg');
-}
+        h1:hover{
+            color:#e84393;
+        }
+
+        .all-products{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product{
+            overflow: hidden;
+            background: #fff;
+            color: #86003C;
+            text-align: center;
+            width: 240px;
+            height: 400px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.2rem;
+            margin: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .product img{
+            height: 200px;
+            margin: 1rem;
+            transition: all 0.3s;
+        }
+
+        .product a:link, .product a:visited{
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e84393;
+            padding: 1rem 3rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            transition: all 0.2s;
+        }
+
+        .product a:hover{
+            transform: scale(1.1);
+        }
 
 
-.bg2 {
-  /* The second image used */
-  background-image: url('pictures/bg-tulips.jpg');
+        .product:hover img{
+            scale: 1.1;
+        }
 
-}
+        .product:hover{
+            box-shadow: 5px 15px 25px #eeeeee;
+        }
 
-.bg3 {
-  background-image: url(pictures/red-tulips.jpg);
-}
-
-.bg4 {
-  background-image: url(pictures/bg-tulips3.jpg);
-}
-
-.bg5 {
-  background-image: url(pictures/tulips5.jpg);
-}
-
-.bg6 {
-  background-image: url(pictures/tulips6.jpg);
-}
-
-.content {
-  height: 300px;
-  background-color: #F8E8EE;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-</style>
+    </style>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Tulips Bouquet</title>
 </head>
+
 <body>
+    <section class="products">
+        <h1>Our Products</h1>
+        <div class="all-products">
+            <div class="product">
+                <img src="img20.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Tulip Kisses Bouquet
+                    </h4>
+                    <p class="product-price">₱ 890.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="parallax bg1"></div>
+            <div class="product">
+                <img src="img15.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Tangerine Dream Ensemble
+                    </h4>
+                    <p class="product-price">₱ 945.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="content">
-    <div>
-        <p style="font-size: 36px; text-align: center; font-weight: bold;">Discover the Timeless Beauty of Tulips</p>
-        <p style="font-size: 18px;">Tulips, with their vibrant colors and elegant shapes, have captivated people for centuries, 
-           earning them a special place in gardens, art, and cultural symbolism. These beautiful flowers
-           belong to the genus Tulipa and are native to Central Asia, particularly in regions stretching 
-           from Turkey to the Himalayas. Tulips have a rich history that intertwines with human civilization. 
-           They were first cultivated by the Turks in the Ottoman Empire during the 10th century. Tulips became 
-           highly prized and were often depicted in art, textiles, and ceramics, symbolizing wealth and prosperity. 
-           Their popularity soared, leading to a period known as the "Tulip Mania" in the 17th century Netherlands, 
-           where tulip bulbs became a form of currency and were traded at exorbitant prices, eventually resulting in
-            a market crash. This event remains one of the most famous economic bubbles in history.</p>
-    </div>
-</div>
+            <div class="product">
+                <img src="img16.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">White Wonderland
+                    </h4>
+                    <p class="product-price">₱ 999.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="parallax bg2"></div>
-<div class="content">
-  <div>
-      <p style="font-size: 36px; text-align: center;">Botanical Marvels</p>
-      <p style="font-size: 18px;">Botanical Marvels:Tulips are members of the Liliaceae family, boasting cup-shaped blooms atop slender stems that can reach varying heights depending on the variety. Their petals, ranging in hues from radiant reds and sunny yellows to delicate pinks and purples, form a captivating display of color and form. Some varieties even feature intricate patterns and textures, adding layers of visual interest. </p>
-  </div>
-</div>
+            <div class="product">
+                <img src="img17.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Fairy Tale Tulip Fantasy
+                    </h4>
+                    <p class="product-price">₱ 1169.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="parallax bg3"></div>
-<div class="content">
-  <div>
-      <p style="font-size: 36px; text-align: center;">Rich History</p>
-      <p style="font-size: 18px;">The history of tulips is as rich and colorful as the blooms themselves. Originating in the Ottoman Empire, tulips were cultivated and admired for their beauty and grace. In the 16th century, they found their way to Europe, particularly the Netherlands, where they became a symbol of wealth, luxury, and indulgence during the Dutch Golden Age. The famous "tulip mania" of the 17th century saw tulip bulbs being traded at exorbitant prices, reflecting their immense value in society at the time.</p>
-  </div>
-</div>
+            <div class="product">
+                <img src="img18.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Dreamy Blue Tulip Delight
+                    </h4>
+                    <p class="product-price">₱ 899.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="parallax bg4"></div>
-<div class="content">
-  <div>
-      <p style="font-size: 36px; text-align: center;">Cultural Significance</p>
-      <p style="font-size: 18px;">Beyond their aesthetic appeal, tulips hold profound cultural significance across various societies. In Persian literature, tulips are often associated with love and springtime, symbolizing renewal and new beginnings. In Dutch culture, tulips remain an enduring symbol of national pride and are prominently featured in art, festivals, and even the country's iconic tulip fields.</p>
-  </div>
-</div>
+            <div class="product">
+                <img src="img19.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Purple Haze Tulip Harmony
+                    </h4>
+                    <p class="product-price">₱ 789.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="parallax bg5"></div>
-<div class="content">
-  <div>
-      <p style="font-size: 36px; text-align: center;">Garden Delights</p>
-      <p style="font-size: 18px;">Tulips are cherished additions to gardens worldwide, adorning formal beds, borders, and naturalized landscapes with their vibrant blooms. They are also popular choices for container gardening, allowing enthusiasts to enjoy their beauty in smaller spaces or indoors. Tulip bulbs are typically planted in the fall, ready to burst forth in a riot of color come springtime, heralding the arrival of warmer weather and the renewal of nature's cycle.</p>
-  </div>
-</div>
+            <div class="product">
+                <img src="img21.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Tulip Fiesta Fusion
+                    </h4>
+                    <p class="product-price">₱ 960.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div class="parallax bg6"></div>
-<div class="content">
-  <div>
-      <p style="font-size: 36px; text-align: center;">Symbolism of Tulips</p>
-      <p style="font-size: 18px;">Throughout history, tulips have symbolized various sentiments and emotions. They are often associated with love, passion, and romance, making them popular choices for bouquets and floral arrangements on special occasions such as weddings and anniversaries. Additionally, tulips symbolize prosperity, abundance, and the fleeting nature of life, reminding us to appreciate the beauty around us while it lasts.</p>
-  </div>
-</div>
+            <div class="product">
+                <img src="img22.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Golden Glow Tulip Ensemble
+                    </h4>
+                    <p class="product-price">₱ 979.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
 
-<div 
+            <div class="product">
+                <img src="img23.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Soft Pink Whisper Bouquet
+                    </h4>
+                    <p class="product-price">₱ 799.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img24.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Ruby Red Tulip Symphony
+                    </h4>
+                    <p class="product-price">₱ 969.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
