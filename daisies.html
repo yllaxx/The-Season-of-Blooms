@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-shadow: border-box;
+        }
+
+        body{
+            font-size: 1.7rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #FFD1DA;
+            color: #86003C;
+            padding: 4rem;
+        
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 4rem;
+            transition: all 0.3s;
+        }
+
+        h1:hover{
+            color:#e84393;
+        }
+
+        .all-products{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product{
+            overflow: hidden;
+            background: #fff;
+            color: #86003C;
+            text-align: center;
+            width: 240px;
+            height: 400px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.2rem;
+            margin: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .product img{
+            height: 200px;
+            margin: 1rem;
+            transition: all 0.3s;
+        }
+
+        .product a:link, .product a:visited{
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e84393;
+            padding: 1rem 3rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            transition: all 0.2s;
+        }
+
+        .product a:hover{
+            transform: scale(1.1);
+        }
+
+
+        .product:hover img{
+            scale: 1.1;
+        }
+
+        .product:hover{
+            box-shadow: 5px 15px 25px #eeeeee;
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Daisy Bouquet</title>
+</head>
+
+<body>
+    <section class="products">
+        <h1>Our Products</h1>
+        <div class="all-products">
+            <div class="product">
+                <img src="img31.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Enchanted Daisy Haven
+                    </h4>
+                    <p class="product-price">₱ 890.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img32.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Daisy Delight Collection
+                    </h4>
+                    <p class="product-price">₱ 945.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img33.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Whispering Petals Daisy Ensemble
+                    </h4>
+                    <p class="product-price">₱ 999.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img34.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Golden Daisy Cascade
+                    </h4>
+                    <p class="product-price">₱ 1169.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img35.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Serenity Bloom Daisy Bouquet
+                    </h4>
+                    <p class="product-price">₱ 899.00</p>
+                    <a class="product-btn" href="https://forms.gle/r49iHNzpm9Jcxn8y5">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
