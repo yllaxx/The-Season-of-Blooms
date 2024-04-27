@@ -1,103 +1,129 @@
-* {
-    padding: 0;
-    margin: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-body {
-    background-color: #FFD1DA;
-}
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; /* Distribute items evenly along the main axis */
-}
-
-.row {
-    flex: 1; /* Distribute space evenly among columns */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-}
-
-.about-1 {
-    margin: 30px;
-    padding: 5px;
-}
-
-.about-1 h1 {
-    text-align: center;
-    color: #e84393;
-    font-weight: bold;
-    font-size: 36px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.about-1 p {
-    text-align: center;
-    padding: 3px;
-    color: #fff;
-}
-
-.about-item {
-    display: flex; /* Add display flex to align items */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    flex: 1; /* Distribute space evenly among items in a row */
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
-    height: 300px; /* Set a fixed height for all items */
-}
-
-.about-item i {
-    font-size: 43px;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.about-item h3 {
-    font-size: 25px;
-    margin-top: 10px;
+.wrapper{
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+    background: #FFD1DA;
 }
 
-.about-item hr {
-    width: 40px;
-    height: 3px;
-    background-color: aquamarine;
-    margin: 0 auto;
-    border: none;
-}
-
-.about-item p {
-    margin-top: 20px;
-}
-
-.about-item:hover {
-    background-color: #e84393;
-}
-
-.about-item:hover i {
-    transform: translate(-20px);
-}
-
-.about-item:hover i,
-.about-item:hover h3,
-.about-item:hover p {
-    color: #fff;
-    transition: all 400ms ease-in-out;
-}
-
-footer {
-    background: palevioletred;
-    padding: 20px;
-}
-
-footer p {
-    color: #fff;
-}
-
-#about p{
+.wrapper p{
+    margin: 25px;
     text-align: justify;
+    font-size: 12px;
+}
+.wrapper h1{
+    font-size: 3em;
+    color: #86003C;
+    margin: 25px;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+.card i{
+    margin: 20px;
+    color: #581ed6;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 100px;
+    text-align: center;
+}
+.card p{
+    color: #6c757d;
+    text-align: justify;
+    font-size: 12px;
+}
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 600;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                   rgba(255, 54, 144, 0.73) 0% ,
+                                   rgba(238, 153, 194, 1)100% ) ,
+                                    url('sunflower.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                    rgba(255, 54, 144, 0.73) 0% ,
+                                    rgba(238, 153, 194, 1)100% ) ,
+                                    url('bg-tulips.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                    rgba(255, 54, 144, 0.73) 0% ,
+                                    rgba(238, 153, 194, 1)100% ) ,
+                                    url('bg-tulips2.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 54, 144, 0.73) 0% ,
+    rgba(238, 153, 194, 1)100% ) ,
+                                    url('bg-tulips3.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 54, 144, 0.73) 0% ,
+    rgba(238, 153, 194, 1)100% ) ,
+                                    url('red-tulips.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+    rgba(255, 54, 144, 0.73) 0% ,
+    rgba(238, 153, 194, 1)100% ) ,
+                                    url('img1.jpg');
+                                    background-size: cover;
+}
+@media(max-width:991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
 }
